@@ -1,0 +1,7 @@
+{
+  "name": "Adafruit SSD1351",
+  "author": "Nathan Friedly <nathan@nfriedly.com>",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Fork of Adafruit's SSD1351 Color OLED driver library"
+}
