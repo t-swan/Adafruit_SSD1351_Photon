@@ -1,3 +1,5 @@
+// To make this compile, you also need to add the Adafruit_mfGFX library!
+
 /*************************************************** 
   This is a example sketch demonstrating graphic drawing
   capabilities of the SSD1351 library for the 1.5" 
@@ -29,7 +31,7 @@
   the Particle Photon & Particle Build IDE.
  ****************************************************/
 
-// You can use any (4 or) 5 pins 
+// You can use any (4 or) 5 pins
 #define sclk A3
 #define mosi A5
 #define dc   D7
@@ -49,14 +51,11 @@
 #include "Adafruit_mfGFX/Adafruit_mfGFX.h"
 #include "Adafruit_SSD1351_Photon/Adafruit_SSD1351_Photon.h"
 
-// Option 1: use any pins but a little slower
-Adafruit_SSD1351 tft = Adafruit_SSD1351(cs, dc, mosi, sclk, rst);  
+// Option 1: Hardware SPI - uses some analog pins, but much faster
+Adafruit_SSD1351 tft = Adafruit_SSD1351(cs, dc, rst);
 
-// Option 2: must use the hardware SPI pins 
-// (for UNO thats sclk = 13 and sid = 11) and pin 10 must be 
-// an output. This is much faster - also required if you want
-// to use the microSD card (see the image drawing example)
-//Adafruit_SSD1351 tft = Adafruit_SSD1351(cs, dc, rst);
+// Option 2: Software SPI - use any pins but a little slower
+//Adafruit_SSD1351 tft = Adafruit_SSD1351(cs, dc, mosi, sclk, rst);  
 
 float p = 3.1415926;
 
