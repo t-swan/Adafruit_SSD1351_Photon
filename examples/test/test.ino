@@ -22,14 +22,19 @@
   The Adafruit GFX Graphics core library is also required
   https://github.com/adafruit/Adafruit-GFX-Library
   Be sure to install it!
+    
+  ----------------
+
+  Modified by Mike Heininger and Nathan Friedly for compatibility with 
+  the Particle Photon & Particle Build IDE.
  ****************************************************/
 
 // You can use any (4 or) 5 pins 
-#define sclk 2
-#define mosi 3
-#define dc   4
-#define cs   5
-#define rst  6
+#define sclk A3
+#define mosi A5
+#define dc   D7
+#define cs   A2
+#define rst  D5
 
 // Color definitions
 #define	BLACK           0x0000
@@ -41,9 +46,8 @@
 #define YELLOW          0xFFE0  
 #define WHITE           0xFFFF
 
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1351.h>
-#include <SPI.h>
+#include "Adafruit_mfGFX/Adafruit_mfGFX.h"
+#include "Adafruit_SSD1351_Photon/Adafruit_SSD1351_Photon.h"
 
 // Option 1: use any pins but a little slower
 Adafruit_SSD1351 tft = Adafruit_SSD1351(cs, dc, mosi, sclk, rst);  
@@ -71,7 +75,9 @@ void setup(void) {
   tft.begin();
 
   Serial.println("init");
+}
 
+void loop() {
   // You can optionally rotate the display by running the line below.
   // Note that a value of 0 means no rotation, 1 means 90 clockwise,
   // 2 means 180 degrees clockwise, and 3 means 270 degrees clockwise.
@@ -135,9 +141,7 @@ void setup(void) {
   
   Serial.println("done");
   delay(1000);
-}
 
-void loop() {
 }
 
 void testlines(uint16_t color) {

@@ -14,10 +14,15 @@
 
   Written by Limor Fried/Ladyada for Adafruit Industries.
   BSD license, all text above must be included in any redistribution
+  
+  ----------------
+
+  Modified by Mike Heininger and Nathan Friedly for compatibility with 
+  the Particle Photon & Particle Build IDE.
  ****************************************************/
 
-#include "Adafruit_mfGFX.h"
-#include "Adafruit_SSD1351.h"
+#include "Adafruit_mfGFX/Adafruit_mfGFX.h"
+#include "Adafruit_SSD1351_Photon.h"
 
 
 #if !defined(PLATFORM_ID)		// Core v0.3.4

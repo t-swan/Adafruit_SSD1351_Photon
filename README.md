@@ -1,9 +1,10 @@
 # Adafruit SSD1351 Color OLED library
 
-Works with the [1.5 inch](https://www.adafruit.com/products/1431), [1.27 inch](https://www.adafruit.com/products/684), and [0.96 inch](https://www.adafruit.com/products/684) OLED breakout boards.
+Confirmed working with the [1.5 inch](https://www.adafruit.com/products/1431), and should also work with the [1.27 inch](https://www.adafruit.com/products/684), and [0.96 inch](https://www.adafruit.com/products/684) OLED breakout boards.
 
-This is extracted from https://github.com/mikeseeh/photon-demo-oled-sdcard and set up for the Spark Web IDE.
+This is based on https://github.com/mikeseeh/photon-demo-oled-sdcard and https://github.com/adafruit/Adafruit-SSD1351-library and 99.9% of the credit goes to those authors.
 
-The library is based on https://github.com/adafruit/Adafruit-SSD1351-library but appears to have some significant differences.
+## microSD Card is not currently supported
 
-License and examples were taken from Adafruit without modification.
+I fiddled with the code for a little while but couldn't convince it to work. 
+Some folks apparently have, though: https://community.particle.io/t/particle-photon-oled-screen-and-sd-card-demo/18145
