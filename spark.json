@@ -1,5 +1,5 @@
 {
-  "name": "Adafruit SSD1351",
+  "name": "Adafruit_SSD1351",
   "author": "Nathan Friedly <nathan@nfriedly.com>",
   "license": "MIT",
   "version": "0.0.1",
