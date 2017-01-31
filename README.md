@@ -14,3 +14,8 @@ This is based on a collection of work from other tallented developers, 99.9% of 
 
 I fiddled with the code for a little while but couldn't convince it to work. 
 Some folks apparently have, though, see https://community.particle.io/t/particle-photon-oled-screen-and-sd-card-demo/18145 and https://github.com/mikeseeh/photon-demo-oled-sdcard
+
+
+## API documentation
+
+See https://learn.adafruit.com/adafruit-gfx-graphics-library/

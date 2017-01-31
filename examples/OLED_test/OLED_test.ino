@@ -49,7 +49,7 @@
 #define WHITE           0xFFFF
 
 #include "Adafruit_mfGFX/Adafruit_mfGFX.h"
-#include "Adafruit_SSD1351_Photon/Adafruit_SSD1351_Photon.h"
+#include "Adafruit_SSD1351_Photon.h"
 
 // Option 1: Hardware SPI - uses some analog pins, but much faster
 Adafruit_SSD1351 tft = Adafruit_SSD1351(cs, dc, rst);
