@@ -1,16 +1,17 @@
-# Adafruit SSD1351 Color OLED library for Particle Photon
+# Adafruit SSD1351 1.5" Color OLED library for Particle Photon
+
+Connect an [Adafruit SSD1351 1.5" Color OLED](https://www.adafruit.com/products/1431) breakout board to a [Particle Photon](https://www.particle.io/products/hardware/photon-wifi-dev-kit). 
 
 ![Particle Photon with OLED Display](http://nfriedly.github.io/Adafruit_SSD1351_Photon/photon-oled.jpg)
 
-Confirmed working with the [1.5 inch OLED](https://www.adafruit.com/products/1431) breakout board. 
+## Limitations
 
-Should also work with the [1.27 inch OLED](https://www.adafruit.com/products/684), and possibly the [0.96 inch OLED](https://www.adafruit.com/products/684) breakout boards (although you'll probably have to fork the library and edit the [height and width DEFINE's](https://github.com/nfriedly/Adafruit_SSD1351_Photon/blob/master/src/Adafruit_SSD1351_Photon.h#L29).)
+### MicroSD Card is not currently supported
+Should be possible, but I haven't yet gotten it working. See https://community.particle.io/t/particle-photon-oled-screen-and-sd-card-demo/18145 and https://github.com/mikeseeh/photon-demo-oled-sdcard for examples where folks have succeeded.
 
-## microSD Card is not currently supported
+### Requires modification for other screen sizes
 
-I fiddled with the code for a little while but couldn't convince it to work. 
-Some folks apparently have, though, see https://community.particle.io/t/particle-photon-oled-screen-and-sd-card-demo/18145 and https://github.com/mikeseeh/photon-demo-oled-sdcard
-
+With a [small change] (https://github.com/nfriedly/Adafruit_SSD1351_Photon/blob/master/src/Adafruit_SSD1351_Photon.h#L29), this library could be adjusted to work with [1.27 inch OLED](https://www.adafruit.com/products/684), and possibly the [0.96 inch OLED](https://www.adafruit.com/products/684) breakout boards.
 
 ## Wiring
 
