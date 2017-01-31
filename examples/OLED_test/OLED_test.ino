@@ -1,5 +1,3 @@
-// To make this compile, you also need to add the Adafruit_mfGFX library!
-
 /*************************************************** 
   This is a example sketch demonstrating graphic drawing
   capabilities of the SSD1351 library for the 1.5" 
@@ -31,12 +29,12 @@
   the Particle Photon & Particle Build IDE.
  ****************************************************/
 
-// You can use any (4 or) 5 pins
+// You can use any 5 pins; see note below about hardware vs software SPI
+#define cs   A2
 #define sclk A3
 #define mosi A5
-#define dc   D7
-#define cs   A2
 #define rst  D5
+#define dc   D6
 
 // Color definitions
 #define	BLACK           0x0000
