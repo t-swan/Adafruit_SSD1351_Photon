@@ -11,7 +11,7 @@ Should be possible, but I haven't yet gotten it working. See https://community.p
 
 ### Requires modification for other screen sizes
 
-With a [small change] (https://github.com/nfriedly/Adafruit_SSD1351_Photon/blob/master/src/Adafruit_SSD1351_Photon.h#L29), this library could be adjusted to work with [1.27 inch OLED](https://www.adafruit.com/products/684), and possibly the [0.96 inch OLED](https://www.adafruit.com/products/684) breakout boards.
+With a [small change](https://github.com/nfriedly/Adafruit_SSD1351_Photon/blob/master/src/Adafruit_SSD1351_Photon.h#L29), this library could be adjusted to work with [1.27 inch OLED](https://www.adafruit.com/products/684), and possibly the [0.96 inch OLED](https://www.adafruit.com/products/684) breakout boards.
 
 ## Wiring
 
