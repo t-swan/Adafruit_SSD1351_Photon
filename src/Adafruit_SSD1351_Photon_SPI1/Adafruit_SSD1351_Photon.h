@@ -14,11 +14,13 @@
 
   Written by Limor Fried/Ladyada for Adafruit Industries.
   BSD license, all text above must be included in any redistribution
-  
+
   ----------------
 
-  Modified by Mike Heininger and Nathan Friedly for compatibility with 
+  Modified by Mike Heininger and Nathan Friedly for compatibility with
   the Particle Photon & Particle Build IDE.
+
+  Tony Swanson added a version that uses SPI1 instead of the default SPI pins.
  ****************************************************/
 #ifndef _ADAFRUIT_SSD1351_H
 #define _ADAFRUIT_SSD1351_H
